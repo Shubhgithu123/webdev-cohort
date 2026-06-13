@@ -107,6 +107,12 @@ for(let food of arr){
 }
 
 
-list.append(...temp)
+list.append(...temp);
 
+const div = document.createElement("div");
 
+div.classList.add("card");
+
+div.classList.add("active")
+
+// console.log(div.classList) //gives DOMTokenList

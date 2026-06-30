@@ -9,7 +9,7 @@ const taskform = document.getElementById("taskform");
 const input = document.getElementById("taskinput")
 
 const list = document.getElementById("list")
-
+    
 taskform.addEventListener("submit",function(e){
     e.preventDefault()
     

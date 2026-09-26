@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="board" >
+        <!-- todo task -->
+        <div class="column" id="todo">
+            <h2>To Do (<span id="todo-count">0</span>)</h2>
+            <div class="tasks" id="todo-task">
+
+            </div>
+            <input type="text" class="task-input" id="todo-inp" placeholder="add a task">
+            <button class="add-task" onclick="addTask('todo')">Add Task</button>
+        </div>
+
+        <!-- doing task -->
+        <div class="column" id="doing">
+            <h2>Doing (<span id="doing-count">0</span>)</h2>
+            <div class="tasks" id="doing-task">
+
+            </div>
+            <input type="text" class="task-input" id="doing-inp" placeholder="add a task">
+            <button class="add-task" onclick="addTask('doing','')">Add Task</button>
+        </div>
+
+        <!-- done task -->
+        <div class="column" id="done">
+            <h2>Done (<span id="done-count">0</span>)</h2>
+            <div class="tasks" id="done-task">
+
+            </div>
+            <input type="text" class="task-input" id="done-inp" placeholder="add a task">
+            <button class="add-task" onclick="addTask('done')">Add Task</button>
+        </div>
+    </div>
+    <div class="context-menu">
+        <ul>
+            <li onclick="editTask()">Edit</li>
+            <li onclick="deleteTask()">Delete</li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

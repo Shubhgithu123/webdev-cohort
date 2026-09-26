@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator{
+    background-color: #f2f2f2f2;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#result{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) inset;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+button:hover{
+    background-color: #ddd;
+}
+
+.clear{
+    background-color: #ff4136;
+    color: #fff;
+}
+
+.number,.decimal{
+    background-color:#fff ;
+    color: #333;
+
+}
+
+.operator{
+    background-color:#0074d9;
+    color: #fff;
+}
+
+.equals{
+    background-color: #01ff70;
+    grid-row: span 2;
+    color: #fff;
+}
+.del{
+    background-color: blueviolet;
+    color : #fff
+}
+.fa-angle-right{
+    display: inline;
+}
+.shift{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.shift-l{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.shift-l:hover{
+    border: 1px solid lightgray;
+    background-color: #df7b7b;
+    box-shadow: 1px 0 10px gray;
+    color: #ccc;
+}
+
+.shift-r{
+    
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.shift-r:hover{
+    border: 1px solid lightgray;
+    background-color: #df7b7b;
+    box-shadow: 1px 0 10px gray;
+    color: #ccc;
+}

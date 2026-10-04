@@ -135,11 +135,48 @@ let max = ""
 for(let i = 0 ; i < teas.length ; i++){
 
     max = teas[i];
-    console.log(`${teas[i]} , length : ${teas[i].length}`)
+    // console.log(`${teas[i]} , length : ${teas[i].length}`)
     if(teas[i].length > max.length){
         max = teas[i];
     }
 
 }
 // let res = teas.slice(0,-1);
-console.log(res)
+// console.log(res)
+
+
+
+
+///objects 
+
+//data is stored in key value pair  manor
+
+
+const person = {
+    x : 10,
+    firstName : "shubham",
+    lastName : "wangekar",
+    hobbies : ["pubg","singing"],
+    address: {
+        hno:1,
+        street : 1, 
+        countryCode : "IN",
+        state : "PB"
+    },
+    getFullName : function (name){
+        return `${name} ragade`
+    },
+    hasgf : false,
+    hadgf : false
+}
+
+console.log(person.x)
+console.log(person.firstName)
+console.log(person.lastName)
+console.log(person.hobbies.length)
+console.log(person.address.countryCode,person.address.state)
+console.log(person.getFullName("shubham"))
+
+
+
+
